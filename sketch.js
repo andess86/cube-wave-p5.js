@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background(0);
 
   ortho(-800, 800, 800, -800, 0, 1600);
   rotateX(-ma);
@@ -27,7 +27,7 @@ function draw() {
       let a = angle + offset;
       let h = floor(map(sin(a), -1, 1, 100, 300));
       translate(x - width / 2, 0, z - height / 2);
-      ambientMaterial(250);
+      ambientMaterial(250, 25, 50);
       box(w, h, w);
       pop();
     }
